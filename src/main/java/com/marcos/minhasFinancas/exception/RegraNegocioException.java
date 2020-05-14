@@ -1,10 +1,10 @@
 package com.marcos.minhasFinancas.exception;
 
-public class RegraNecocioException extends RuntimeException {
+public class RegraNegocioException extends RuntimeException {
 
 	private static final long serialVersionUID = 1L;
 
-	public RegraNecocioException(String message) {
+	public RegraNegocioException(String message) {
 		super(message);
 	}
 
