@@ -104,4 +104,9 @@ public class LancamentoServiceImpl implements LancamentoService{
 		return repository.findById(id);
 	}
 
+	@Override
+	public List<Lancamento> findList() {
+		return repository.findAll();
+	}
+
 }

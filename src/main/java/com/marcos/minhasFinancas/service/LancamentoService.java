@@ -22,5 +22,7 @@ public interface LancamentoService {
 	void validar(Lancamento lancamento);
 	
 	Optional<Lancamento> obterPorId(Long id);
+	
+	List<Lancamento> findList();
 
 }

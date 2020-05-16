@@ -1,5 +1,6 @@
 package com.marcos.minhasFinancas.service.impl;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -60,6 +61,15 @@ public class UsuarioServiceImpl implements UsuarioService{
 	public Optional<Usuario> obterPorId(Long id) {
 		
 		return repository.findById(id);
+	}
+	
+	
+		
+
+	@Override
+	public List<Usuario> findList() {
+		return repository.findAll();
+	
 	}
 
 }
